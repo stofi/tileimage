@@ -15,4 +15,3 @@ Object.values(import.meta.globEager('./modules/*.js')).map((i) =>
 )
 
 app.mount('#app')
-

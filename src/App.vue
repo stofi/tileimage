@@ -1,11 +1,11 @@
 <template>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite + Tailwind + Vue-Router" />
-  <router-view />
+  <AppLayout>
+    <router-view />
+  </AppLayout>
 </template>
 
 <script lang="ts" setup>
-
-import HelloWorld from './components/HelloWorld.vue'
+import AppLayout from './components/AppLayout.vue'
 import useDarkmode from './use/Darkmode'
 
 useDarkmode()
