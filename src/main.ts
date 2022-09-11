@@ -10,8 +10,4 @@ const router = configureRouter()
 
 app.use(router)
 
-Object.values(import.meta.globEager('./modules/*.js')).map((i) =>
-  i.install?.({ app, isClient: true, router })
-)
-
 app.mount('#app')
